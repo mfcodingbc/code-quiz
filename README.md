@@ -1,4 +1,5 @@
 **Module 4: Web APIs Challenge: Code Quiz**
+
 This week's challenge asks us to create a quiz on the basics of JavaScript with multiple multiple choice questions from which a score is determined and saved, which then allows a user to input their initials to create a high score. This score (and other high scores) can be seen and challenged when taking any further attempts of the quiz. JavaScript code that I create will run the quiz, timer, and save the score the user earns upon finishing the quiz. HTML and CSS I create will design the page and make clear all elements on the page to the user.
 
 **User Story:**
@@ -21,7 +22,7 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 
-Finished Project Links
+Finished Project Links:
 
 <!-- URL to site: https://mfcodingbc.github.io/
 
