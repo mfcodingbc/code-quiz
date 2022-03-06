@@ -1,0 +1,24 @@
+/* Body Styles */
+body {
+background-color: rgb(161, 134, 64);
+}
+
+/* Text Styles */
+
+.text-warning {
+    color: rgb(184, 146, 51);
+}
+
+main h1 {
+    background-color: rgb(184, 146, 51);
+    border-radius: 12px;
+    padding-bottom: 10px;
+}
+
+main p {
+    font-size: larger;
+}
+
+.final-score {
+    font-weight: bold;
+}

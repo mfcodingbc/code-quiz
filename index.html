@@ -13,15 +13,46 @@
 </head>
 
 <body>
-    <!-- create main element with id -->
-
-    <!-- create text with class -->
-
-    <!-- create button element "Begin Quiz!" with id and class -->
-
+    <!-- Header -->
     <!-- Include timer element in upper right of page (id and class) -->
-
     <!-- If time: Include hyperlink to highscores page in upper left (id and class) -->
+    <header class="container-fluid bg-info" id="header">
+        <div class="row">
+            <div class="col d-flex justify-content-between">
+                <h2>
+                    <a class="text-warning" href=highscores.html>View High Scores</a>
+                </h2>
+                <h2 class="timer" id="countdown">Time: </h2> 
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container" id="main">
+        <div class="row">
+            <div class="col d-flex justify-content-center p-3 m-3">
+                <h1 class="display-1 text-center">The JavaScript Coding Quiz Challenge!</h1>
+            </div>
+        </div>
+        <!-- create text with class -->
+        <div class="row">
+            <div class="col d-flex justify-content-center m-3">
+                <p class="text-center">
+                    Can you answer the following JavaScript code-related questions within the time limit? The faster you select correct answers, the better your final score! However, any incorrect answers will result in a loss of 10 seconds, which will lower your score!
+                </p>
+            </div>
+        </div>
+        <!-- create button element "Begin Quiz!" with id and class -->
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center">Click the button to begin:</p>
+            </div>
+            <div class="col-12 text-center">
+                <button type="button" class="btn btn-info">Begin Quiz!</button>
+            </div>
+        </div>
+            
+    </main>
 
     <!-- Index JavaScript file -->
     <script src="./assets/js/script.js"></script>

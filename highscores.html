@@ -13,13 +13,45 @@
 </head>
 
 <body>
-    <!-- create main element with id -->
-
-    <!-- create text with class -->
-
-    <!-- create button elements "Try Again?" and "Delete High Scores" with id and class -->
-
+    <!-- Header -->
     <!-- Include timer element in upper right of page (id and class) -->
+    <!-- If time: Include hyperlink to highscores page in upper left (id and class) -->
+    <header class="container-fluid bg-info" id="header">
+        <div class="row">
+            <div class="col d-flex justify-content-end">
+                <h2 class="timer" id="countdown">Time:</h2> 
+            </div>
+        </div>
+    </header>
+   <!-- Main -->
+   <main class="container" id="main">
+    <div class="row">
+        <div class="col d-flex justify-content-center m-3">
+            <h1 class="">High Scores</h1>
+        </div>
+    </div>
+    <!-- create text with class -->
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+            <p class="final-score">
+                Your final score is:
+            </p>
+        </div>
+        <div class="col-12 d-flex justify-content-center" id="highScoreTable">
+            <p>A HIGH SCORE TABLE WILL BE DYNAMICALLY CREATED HERE!!</p>
+        </div>
+    </div>
+    <!-- create button elements "Try Again?" and "Delete High Scores" with id and class -->
+    <div class="row">
+        <div class="col-6 d-flex justify-content-end">
+            <button type="button" class="btn btn-info">Try Again?</button>
+        </div>
+        <div class="col-6 d-flex justify-content-start">
+            <button type="button" class="btn btn-danger">Delete High Scores</button>
+        </div>
+    </div>
+        
+</main>
 
     <!-- HighScores JavaScript file -->
     <script src="./assets/js/hsscript.js"></script>
