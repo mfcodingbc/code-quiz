@@ -24,9 +24,9 @@ THEN I can save my initials and score
 
 Finished Project Links:
 
-URL to site: https://mfcodingbc.github.io/code-quiz
+URL to site: https://mfcodingbc.github.io/code-quiz/
 
-URL to GitHub Repository: https://github.com/mfcodingbc/ code-quiz
+URL to GitHub Repository: https://github.com/mfcodingbc/code-quiz
 
 ![Finished Site Screenshot](./assets/images/code-quiz-deployed-site-screenshot.PNG)
 
