@@ -1,8 +1,9 @@
 // This is the JS file for index.html page (the code quiz)
 
 // create variables for elements of html
-var count = 11;
+var count = 20;
 
+var mainEl = document.querySelector("#main");
 var timerEl = document.querySelector("#countdown");
 var mainTitleEl = document.querySelector("#mainTitle");
 var mainTextEl = document.querySelector("#mainText");
@@ -11,11 +12,12 @@ var mainBtnEl = document.querySelector("#mainBtn");
 
 
 // create arrays (var ...= [array]) for each question in order to contain the multiple choice answers (strings)
-var questionOne = [
-    "Blah blah blah",
-    "Ha ha ha",
-    "La la la",
-    "Ho ho ho"
+var questions = [
+    {
+        number: 1,
+        question:  "Which of the following is NOT a primitave?",
+        choices: "String" + "Boolean" + "Array" + "Number",
+    },
 ];
 
 // create var countdown (that is a function) with variable for timeleft (this variable decreases on wrong answers and ends game when it hits 0)
@@ -38,18 +40,39 @@ var timerCountdown = function () {
             count--;
         }
     }, 1000);
-}
+};
 
 // create var gameStart (function) calling the 1st array and starting the countdown function
-// var gameStart = function () {
-//     mainEl. 
-// };
+var gameStart = function () {
+    timerCountdown();
 
-
-// create function for each array (gameQuestion) that displays question and upon user clicking response, is removed and replaced by next question
+    // create function for each array (gameQuestion) that displays question and upon user clicking response, is removed and replaced by next question
     // answers should be contained within buttons that react (change bg color) upon hover (addEventListeners!!)
     // upon correct answer, award player 10 pts ("Correct!." message is displayed on bottom)
     // upon wrong answer, subtract time from countdownTimer (-10 sec) ("Wrong!." message is displayed on bottom)
+    var mainQuestion = function () {
+        mainTitleEl.textContent = "Question 1";
+        mainTitleEl.classList.add("display-2");
+        mainTextEl.textContent = "Question TBD";
+        mainEndEl.textContent = "";
+        // remove start button
+        var noBtn = document.getElementById("mainBtn")
+        noBtn.remove();
+
+    //     for(var i=0; i < questions.length; i++){
+    //         var response =
+    //         if (response == questions[i].answer){
+    //             mainEndEl.textContent = "Correct!";
+    //         } else {
+    //             mainEndEl.textContent = "Incorrect! Time -10";
+    //             count-10;
+    //         }
+    //     };
+    };
+    mainQuestion();
+
+};
+
 
 // create function (gameEnd) that runs after final response is collected OR timer reaches 0
     // Includes input for user to store initials
@@ -91,6 +114,5 @@ var gameEnd = function () {
 
 // create event listener for button element that upon click will call the gameStart function
 mainBtnEl.addEventListener("click", function () {
-    timerCountdown();
-    // gameStart();
+    gameStart();
 })
